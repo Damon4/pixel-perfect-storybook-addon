@@ -8,6 +8,7 @@ exports.ToggleOverlayTool = void 0;
 var _react = _interopRequireWildcard(require("react"));
 var _managerApi = require("@storybook/manager-api");
 var _components = require("@storybook/components");
+var _icons = require("@storybook/icons");
 var _constants = require("./constants");
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n["default"] = e, t && t.set(e, n), n; }
@@ -29,16 +30,10 @@ var ToggleOverlayTool = exports.ToggleOverlayTool = function ToggleOverlayTool()
       }
     });
   }, [pixelPerfect === null || pixelPerfect === void 0 ? void 0 : pixelPerfect.active]);
-  return (
-    /*#__PURE__*/
-    // @ts-ignore
-    _react["default"].createElement(_components.IconButton, {
-      key: _constants.TOGGLE_OVERLAY_TOOL_ID,
-      active: pixelPerfect === null || pixelPerfect === void 0 ? void 0 : pixelPerfect.active,
-      title: "Toggle the component overlaying image",
-      onClick: toggleOverlay
-    }, /*#__PURE__*/_react["default"].createElement(_components.Icons, {
-      icon: pixelPerfect !== null && pixelPerfect !== void 0 && pixelPerfect.active ? 'eye' : 'eyeclose'
-    }))
-  );
+  return /*#__PURE__*/_react["default"].createElement(_components.IconButton, {
+    key: _constants.TOGGLE_OVERLAY_TOOL_ID,
+    active: pixelPerfect === null || pixelPerfect === void 0 ? void 0 : pixelPerfect.active,
+    title: "Toggle the component overlaying image",
+    onClick: toggleOverlay
+  }, pixelPerfect !== null && pixelPerfect !== void 0 && pixelPerfect.active ? /*#__PURE__*/_react["default"].createElement(_icons.EyeIcon, null) : /*#__PURE__*/_react["default"].createElement(_icons.EyeCloseIcon, null));
 };

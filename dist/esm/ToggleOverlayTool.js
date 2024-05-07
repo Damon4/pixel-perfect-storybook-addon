@@ -6,7 +6,8 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 import React, { useCallback } from "react";
 import { useGlobals } from "@storybook/manager-api";
-import { Icons, IconButton } from "@storybook/components";
+import { IconButton } from "@storybook/components";
+import { EyeIcon, EyeCloseIcon } from "@storybook/icons";
 import { TOGGLE_OVERLAY_TOOL_ID } from "./constants";
 export var ToggleOverlayTool = function ToggleOverlayTool() {
   var _useGlobals = useGlobals(),
@@ -20,16 +21,10 @@ export var ToggleOverlayTool = function ToggleOverlayTool() {
       }
     });
   }, [pixelPerfect === null || pixelPerfect === void 0 ? void 0 : pixelPerfect.active]);
-  return (
-    /*#__PURE__*/
-    // @ts-ignore
-    React.createElement(IconButton, {
-      key: TOGGLE_OVERLAY_TOOL_ID,
-      active: pixelPerfect === null || pixelPerfect === void 0 ? void 0 : pixelPerfect.active,
-      title: "Toggle the component overlaying image",
-      onClick: toggleOverlay
-    }, /*#__PURE__*/React.createElement(Icons, {
-      icon: pixelPerfect !== null && pixelPerfect !== void 0 && pixelPerfect.active ? 'eye' : 'eyeclose'
-    }))
-  );
+  return /*#__PURE__*/React.createElement(IconButton, {
+    key: TOGGLE_OVERLAY_TOOL_ID,
+    active: pixelPerfect === null || pixelPerfect === void 0 ? void 0 : pixelPerfect.active,
+    title: "Toggle the component overlaying image",
+    onClick: toggleOverlay
+  }, pixelPerfect !== null && pixelPerfect !== void 0 && pixelPerfect.active ? /*#__PURE__*/React.createElement(EyeIcon, null) : /*#__PURE__*/React.createElement(EyeCloseIcon, null));
 };
