@@ -1,6 +1,7 @@
 import React, { useCallback } from "react";
 import { useGlobals } from "@storybook/manager-api";
-import { Icons, IconButton } from "@storybook/components";
+import { IconButton } from "@storybook/components";
+import { EyeIcon, EyeCloseIcon } from "@storybook/icons";
 import { TOGGLE_OVERLAY_TOOL_ID } from "./constants";
 
 export const ToggleOverlayTool = () => {
@@ -17,14 +18,13 @@ export const ToggleOverlayTool = () => {
   );
 
   return (
-    // @ts-ignore
     <IconButton
       key={TOGGLE_OVERLAY_TOOL_ID}
       active={pixelPerfect?.active}
       title="Toggle the component overlaying image"
       onClick={toggleOverlay}
     >
-      <Icons icon={pixelPerfect?.active ? 'eye' : 'eyeclose' } />
+      {pixelPerfect?.active ? <EyeIcon /> : <EyeCloseIcon />}
     </IconButton>
   );
 };
