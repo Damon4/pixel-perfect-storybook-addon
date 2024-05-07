@@ -43,8 +43,7 @@
     "prerelease": "zx scripts/prepublish-checks.mjs",
     "release": "npm run build && auto shipit",
     "eject-ts": "zx scripts/eject-typescript.mjs",
-    "prepack": "npm run build",
-    "postinstall": "npm run build"
+    "prepack": "npm run build"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
