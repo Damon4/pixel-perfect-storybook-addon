@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ToggleOverlayTool = void 0;
 var _react = _interopRequireWildcard(require("react"));
-var _managerApi = require("@storybook/manager-api");
-var _components = require("@storybook/components");
+var _managerApi = require("storybook/manager-api");
+var _components = require("storybook/internal/components");
 var _icons = require("@storybook/icons");
 var _constants = require("./constants");
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }

@@ -1,4 +1,4 @@
-import { useChannel, useEffect, useState, makeDecorator } from "@storybook/preview-api";
+import { useChannel, useEffect, useState, makeDecorator } from "storybook/preview-api";
 
 
 import { DEFAULT_DYNAMIC_OVERLAY_OPTIONS, EVENTS } from "./constants";

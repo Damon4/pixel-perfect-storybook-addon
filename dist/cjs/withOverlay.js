@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.withOverlay = void 0;
-var _previewApi = require("@storybook/preview-api");
+var _previewApi = require("storybook/preview-api");
 var _constants = require("./constants");
 var _overlay = require("./utils/overlay");
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }

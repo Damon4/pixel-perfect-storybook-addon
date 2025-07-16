@@ -1,6 +1,6 @@
 "use strict";
 
-var _managerApi = require("@storybook/manager-api");
+var _managerApi = require("storybook/manager-api");
 var _constants = require("../constants");
 var _ToggleOverlayTool = require("../ToggleOverlayTool");
 var _Panel = require("../Panel");

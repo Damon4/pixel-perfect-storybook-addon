@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
-import { useGlobals } from "@storybook/manager-api";
-import { IconButton } from "@storybook/components";
+import { useGlobals } from "storybook/manager-api";
+import { IconButton } from "storybook/internal/components";
 import { EyeIcon, EyeCloseIcon } from "@storybook/icons";
 import { TOGGLE_OVERLAY_TOOL_ID } from "./constants";
 
@@ -11,8 +11,8 @@ export const ToggleOverlayTool = () => {
     () =>
       updateGlobals({
         pixelPerfect: {
-          active: !pixelPerfect?.active
-        }
+          active: !pixelPerfect?.active,
+        },
       }),
     [pixelPerfect?.active]
   );

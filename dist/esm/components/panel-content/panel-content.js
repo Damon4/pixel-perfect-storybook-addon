@@ -12,9 +12,9 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 import React, { useMemo, useEffect, useCallback } from "react";
 import { Checkbox, Slider } from "@mui/material";
-import { useAddonState, useStorybookState, useParameter, useChannel } from "@storybook/manager-api";
-import { themes } from "@storybook/theming";
-import ControlTable from './ui/control-table/control-table';
+import { useAddonState, useStorybookState, useParameter, useChannel } from "storybook/manager-api";
+import { themes } from "storybook/theming";
+import ControlTable from "./ui/control-table/control-table";
 import { ResetButton } from "./ui/reset-button/reset-button";
 import { DEFAULT_DYNAMIC_OVERLAY_OPTIONS, EVENTS, DYNAMIC_OVERLAYS_OPTIONS_STATE, PARAM_KEY } from "../../constants";
 var PanelContent = function PanelContent() {

@@ -1,7 +1,7 @@
 import React from "react";
 import { IconButton, Tooltip } from "@mui/material";
-import { SettingsBackupRestore } from '@mui/icons-material';
-import { themes } from "@storybook/theming";
+import { SettingsBackupRestore } from "@mui/icons-material";
+import { themes } from "storybook/theming";
 
 interface ResetButtonProps {
   title: string;
@@ -15,7 +15,9 @@ export const ResetButton = (props: ResetButtonProps) => {
       <IconButton onClick={props.onClick}>
         <SettingsBackupRestore
           sx={{
-            color: props.canReset ? themes.normal.colorSecondary : themes.normal.base,
+            color: props.canReset
+              ? themes.normal.colorSecondary
+              : themes.normal.base,
           }}
         />
       </IconButton>

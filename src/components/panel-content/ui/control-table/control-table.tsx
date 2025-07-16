@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { styled, themes } from "@storybook/theming";
+import { styled, themes } from "storybook/theming";
 
 // Interfaces
 interface Cell {
@@ -30,7 +30,12 @@ const Row = styled.tr({
 
 const commonCellStyles = ({ side }: Cell) => ({
   width: side === "left" ? "25%" : "75%",
-  padding: side === "left" ? "10px 15px 10px 30px" : side === "center" ? "10px 15px" : "10px 30px 10px 15px",
+  padding:
+    side === "left"
+      ? "10px 15px 10px 30px"
+      : side === "center"
+      ? "10px 15px"
+      : "10px 30px 10px 15px",
 });
 
 const HeadCell = styled.th<Cell>(({ side }) => ({
@@ -58,7 +63,7 @@ const ControlTable = (props: ControlTable) => {
       </thead>
 
       <tbody>
-        {props.rows.map(row => (
+        {props.rows.map((row) => (
           <Row key={row.name}>
             <BodyCell side="left">{row.name}</BodyCell>
             <BodyCell side="center">{row.control}</BodyCell>
@@ -67,7 +72,7 @@ const ControlTable = (props: ControlTable) => {
         ))}
       </tbody>
     </Table>
-  )
+  );
 };
 
 export default ControlTable;
