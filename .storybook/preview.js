@@ -16,3 +16,4 @@ export const parameters = {
     disableSnapshot: true,
   },
 }
+export const tags = ['autodocs'];

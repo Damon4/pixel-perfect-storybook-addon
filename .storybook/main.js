@@ -4,15 +4,11 @@ module.exports = {
     "../stories/**/*.stories.@(js|jsx|ts|tsx)",
   ],
 
-  addons: ["../preset.js", "@storybook/addon-essentials"],
+  addons: ["../preset.js", "@storybook/addon-docs"],
   staticDirs: ['../public'],
 
   framework: {
     name: "@storybook/react-webpack5",
     options: {}
-  },
-
-  docs: {
-    autodocs: true
   }
 };

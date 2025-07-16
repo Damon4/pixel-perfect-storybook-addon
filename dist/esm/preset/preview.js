@@ -1,8 +1,8 @@
 import { withOverlay } from "../withOverlay";
 var preview = {
-  decorators: [withOverlay],
-  globals: {
-    "pixelPerfect": false
-  }
+  decorators: [withOverlay]
+};
+export var globals = {
+  pixelPerfect: false
 };
 export default preview;

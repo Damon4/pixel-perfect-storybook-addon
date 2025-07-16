@@ -7,8 +7,8 @@ Object.defineProperty(exports, "__esModule", {
 exports["default"] = void 0;
 var _react = _interopRequireWildcard(require("react"));
 var _material = require("@mui/material");
-var _managerApi = require("@storybook/manager-api");
-var _theming = require("@storybook/theming");
+var _managerApi = require("storybook/manager-api");
+var _theming = require("storybook/theming");
 var _controlTable = _interopRequireDefault(require("./ui/control-table/control-table"));
 var _resetButton = require("./ui/reset-button/reset-button");
 var _constants = require("../../constants");
