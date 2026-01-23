@@ -6,7 +6,7 @@ module.exports = {
 
   addons: [
     "../preset.js",
-    "storybook/internal/docs-tools",
+    "@storybook/addon-docs",
     "@storybook/addon-webpack5-compiler-babel"
   ],
   staticDirs: ["../public"],

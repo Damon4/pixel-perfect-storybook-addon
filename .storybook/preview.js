@@ -1,7 +1,6 @@
 export const parameters = {
   viewport: {
-    defaultViewport: "desktop",
-    viewports: {
+    options: {
       desktop: {
         name: "Desktop",
         type: "desktop",
@@ -10,7 +9,7 @@ export const parameters = {
           height: "655px",
         },
       },
-    },
+    }
   },
   chromatic: {
     disableSnapshot: true,
@@ -24,4 +23,11 @@ export const globalTypes = {
     description: "Enable pixel perfect overlay",
     defaultValue: false,
   },
+};
+
+export const initialGlobals = {
+  viewport: {
+    value: "desktop",
+    isRotated: false
+  }
 };
