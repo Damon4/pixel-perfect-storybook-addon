@@ -46,16 +46,17 @@
     "prepack": "npm run build"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.5",
-    "@babel/preset-typescript": "^7.13.0",
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.28.6",
+    "@babel/preset-env": "^7.28.6",
+    "@babel/preset-react": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
     "@commitlint/cli": "17.2.0",
     "@commitlint/config-conventional": "17.2.0",
-    "@storybook/addon-docs": "^9.0.17",
-    "@storybook/addon-webpack5-compiler-babel": "^3.0.6",
-    "@storybook/react-webpack5": "^9.0.17",
+    "@storybook/addon-docs": "^10.2.0",
+    "@storybook/addon-webpack5-compiler-babel": "^4.0.0",
+    "@storybook/react-webpack5": "^10.2.0",
+    "@vitest/mocker": "^3.2.4",
     "boxen": "^5.0.1",
     "chromatic": "6.11.4",
     "concurrently": "^6.2.0",
@@ -66,14 +67,14 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rimraf": "^3.0.2",
-    "storybook": "^9.0.17",
-    "typescript": "^4.2.4",
+    "storybook": "^10.2.0",
+    "typescript": "^5.9.3",
     "yargs": "17.6.2",
-    "zx": "^7.1.1"
+    "zx": "^8.8.5"
   },
   "peerDependencies": {
     "react": "^18.0.0",
-    "storybook": "^9.0.17"
+    "storybook": "^10.2.0"
   },
   "peerDependenciesMeta": {
     "react": {

@@ -8,8 +8,12 @@
     "incremental": false,
     "isolatedModules": true,
     "jsx": "react",
-    "lib": ["es2017", "dom"],
-    "module": "commonjs",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "module": "preserve",
+    "moduleResolution": "bundler",
     "noImplicitAny": true,
     "rootDir": "./src",
     "skipLibCheck": true,
